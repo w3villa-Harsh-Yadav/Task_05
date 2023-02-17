@@ -40,6 +40,14 @@ ul{
     background-size: cover;
     object-fit: contain;
 }
+.Home .container .heading .logo{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.Home .container .heading .logo .sub{
+    font-size: small;
+    font-weight: lighter;
+}
 .Home .navigation-bar{
     display: flex;
     justify-content: space-between;
@@ -47,6 +55,7 @@ ul{
 .Home .navigation-bar .list ul{
     display: flex;
     list-style-type: none;
+    padding-top: 10px
 }
 .Home .navigation-bar .list ul li{
     padding-right: 20px;
@@ -78,7 +87,7 @@ ul{
     display: none;
 }
 /* Media Quries of Home classes */
-@media screen and (max-width:768px){
+@media screen and (max-width:860px){
     .Home .navigation-bar .list ul .symb{
         display: none;
     }
@@ -167,7 +176,7 @@ ul{
     width: 80%;
 }
 /* People Media Queries */
-@media screen and (max-width:768px){
+@media screen and (max-width:900px){
     .People .people-content{
         padding: 0px;
     }
@@ -207,7 +216,7 @@ ul{
     padding: 20px;
 }
 /* Pink Media Queries */
-@media screen and (max-width:768px){
+@media screen and (max-width:1212px){
     .Pink .pink-content{
         flex-direction: column;
     }
@@ -245,7 +254,7 @@ ul{
 }
 
 /* Footer Media Queries */
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
     .Footer footer{
         width: 100%;
     }
