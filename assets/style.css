@@ -224,7 +224,7 @@ ul{
 .Footer footer .content{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(148, 147, 147);
 }
 .Footer .achoo p,
 .Footer .support p,
