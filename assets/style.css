@@ -66,6 +66,9 @@ ul{
     text-decoration: none;
     color: white;
 }
+.Home .navigation-bar .list ul .symb{
+    color: white;
+}
 .Home .title{
     height: 80vh;
     display: flex;
