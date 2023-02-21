@@ -35,7 +35,7 @@ ul{
 /* +++++ Home Classes ++++++ */
 
 .Home{
-    background-image: url("https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-image: url("https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1600");
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: contain;
@@ -43,10 +43,12 @@ ul{
 .Home .container .heading .logo{
     font-size: 40px;
     font-weight: bolder;
+    color: white;
 }
-.Home .container .heading .logo .sub{
+.Home .container .heading .sub{
     font-size: small;
-    font-weight: lighter;
+    font-weight: light;
+    color: white;
 }
 .Home .navigation-bar{
     display: flex;
@@ -62,6 +64,7 @@ ul{
 }
 .Home .navigation-bar .list ul li a{
     text-decoration: none;
+    color: white;
 }
 .Home .title{
     height: 80vh;
@@ -73,6 +76,7 @@ ul{
 }
 .Home .title div{
     font-size: 50px;
+    color: white;
 }
 .Home .title .button{
     padding: 50px 0px;
@@ -82,6 +86,7 @@ ul{
     padding: 20px 30px;
     background-color: #f14984;
     color: white;
+    border: none;
 }
 .Home .navigation-bar .dropdown{
     display: none;
@@ -115,7 +120,12 @@ ul{
     }
     .Home .navigation-bar .dropdown{
         display: block;
-        background-color: inherit;
+    }
+    .Home .navigation-bar .dropdown i{
+        color: white;
+    }
+    .Home .navigation-bar .list ul li a{
+        color: black;
     }
 }
 @media screen and (max-width:425px){
@@ -134,8 +144,13 @@ ul{
     padding-top: 40px;
 }
 .Mission .mission-content .heading{
-    font-size: 84px;
+    font-size: 50px;
     font-weight: 300;
+    padding-bottom: 50px;
+}
+.Mission .mission-content .para{
+    width: 50%;
+    margin: auto;
 }
 /* Mission Media Queries */
 @media screen and (max-width:768px){
@@ -143,7 +158,12 @@ ul{
         padding: 0px;
     }
     .Mission .mission-content .heading{
-        font-size: 60px;
+        font-size: 50px;
+
+    }
+    .Mission .mission-content .para{
+        width: 100%;
+        margin: auto;
     }
 }
 
@@ -159,11 +179,17 @@ ul{
     padding-top: 40px;
 }
 .People .people-content .heading{
-    font-size: 84px;
+    font-size: 50px;
     font-weight: 300;
+    padding-bottom: 50px;
+}
+.People .people-content .para{
+    width: 50%;
+    margin: auto;
 }
 .People .people-images{
     display: flex;
+    justify-content: space-between;
 }
 .People .people-images .people-cont .img img{
     width: 100%;
@@ -172,8 +198,8 @@ ul{
     justify-content: space-between;
 }
 .People .people-images .people-cont .img-text{
-    border-bottom: 1px solid black;
-    width: 80%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+    width: 100%;
 }
 /* People Media Queries */
 @media screen and (max-width:900px){
@@ -181,7 +207,11 @@ ul{
         padding: 0px;
     }
     .People .people-content .heading{
-        font-size: 60px;
+        font-size: 50px;
+    }
+    .People .people-content .para{
+        width: 100%;
+        margin: auto;
     }
     .People .people-images{
         flex-direction: column;
@@ -227,7 +257,7 @@ ul{
 
 /* +++++ Footer Classes +++++*/
 .Footer footer{
-    width: 60%;
+    width: 100%;
 }
 
 .Footer footer .content{
@@ -259,9 +289,6 @@ ul{
         width: 100%;
     }
     .Footer footer .content{
-        flex-direction: column;
-    }
-    .Footer .container .contact .icons{
         flex-direction: column;
     }
     .Footer .container .contact .icons i{
